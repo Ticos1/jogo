@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Astro Paws: Slime Invasion</title>
+<meta name="description" content="A cat astronaut fights waves of space slimes. Survive, level up and pick crazy upgrades!">
+<meta name="theme-color" content="#0b0820">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud" class="hidden">
+  <div id="xpbar"><div id="xpfill"></div><span id="lvl">Lv 1</span></div>
+  <div id="timer">00:00</div>
+  <div id="stats"><span id="kills">👾 0</span><span id="coins">🪙 0</span></div>
+  <button id="pausebtn" aria-label="Pause">❚❚</button>
+</div>
+
+<div id="screens"></div>
+
+<div id="adoverlay" class="hidden">
+  <div class="adbox">
+    <div id="adtitle">📺 Ad</div>
+    <div class="count">3</div>
+    <div id="adnote"></div>
+  </div>
+</div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
